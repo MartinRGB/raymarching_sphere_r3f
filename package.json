@@ -1,0 +1,36 @@
+{
+  "name": "raymarching-sphere",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build-static": "next build && npm run build-static-repair-index && npm run build-static-repair-index-2",
+    "build-static-repair-index": "replace-in-files --string \"/_next/static\" --replacement \"/_next/static\" out/index.html",
+    "build-static-repair-index-2": "replace-in-files --string \"/assets\" --replacement \"./assets\" out/index.html"
+  },
+  "dependencies": {
+    "@react-spring/three": "^9.7.2",
+    "@react-spring/web": "^9.7.2",
+    "@react-three/drei": "^9.68.3",
+    "@react-three/fiber": "^8.13.0",
+    "@types/node": "20.1.4",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "@types/three": "^0.152.0",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.2",
+    "leva": "^0.9.34",
+    "next": "13.4.2",
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "replace-in-files-cli": "^2.2.0",
+    "tailwindcss": "3.3.2",
+    "three": "^0.152.2",
+    "typescript": "5.0.4"
+  }
+}
