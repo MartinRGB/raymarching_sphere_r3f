@@ -29,7 +29,19 @@ export default function Home() {
       <div id="work-template" className='absolute w-screen h-screen pointer-events-none'>
           <Effect/>
       </div>
-      
+
+      <iframe 
+          src="https://ghbtns.com/github-btn.html?user=martinrgb&repo=raymarching_sphere_r3f&type=star&count=true&size=large" 
+          style={{
+            position: 'absolute',
+            left:'16px',
+            top: '16px',
+            userSelect:'none'
+          }}
+          width="170" height="30" title="GitHub">
+          
+        </iframe>
+
     </main>
   )
 }
